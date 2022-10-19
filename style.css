@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar_bg {
+    background-color: #5118a4;
+    ;
+}
+
+.navbar_bg a {
+    /* color: #ffffff; */
+}
+svg {
+    /* color: #ffffff; */
+}
+
+/* Screen1 */
+.welcome_inner h1{
+    font-size: 50px;
+}

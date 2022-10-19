@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: normal;
+    src: url('../fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: bold;
+    src: url('../fonts/roboto/Roboto-Bold.ttf');
+}
+
+p {
+    margin: 0.2rem !important;
+}
+
+body {
+    font-family: normal;
+    background-color: #faebd754 !important;
+}
+
+
+
+.container-fluid {
+    justify-content: flex-start !important;
+}
+
+.navbar_bg {
+    background-color: #5118a4;
+}
+
+.navbar_bg a {
+    color: #ffffff;
+    font-family: bold;
+}
+
+a:hover {
+    color: #ffffff !important;
+}
+
+svg {
+    color: #ffffff;
+}
+
+.welcome_inner {
+    margin-top: 5rem;
+}
+
+.welcome_inner h1 {
+    font-size: 60px;
+    font-family: normal;
+    font-weight: normal;
+}
+
+.welcome_inner button {
+    padding: 8px 25px;
+    background-color: #5118a4;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: bold;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.card_inner {
+    margin-top: 2rem;
+}
+
+.card_btn {
+    position: absolute;
+    bottom: 10px;
+}
+
+.card_inner a {
+    background-color: #5118a4;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 1rem !important;
+    font-size: 20px;
+}
+
+
+
+.card_inner .cart_btn_dec {
+    background-color: #ff1eb4;
+    color: #ffffff;
+    /* margin-left: 0.5rem; */
+}
+
+.card_inner img {
+    width: 342px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body h5 {
+    font-family: bold;
+}
+
+.card-body p,
+.card-body a {
+    font-family: normal !important;
+}
+
+.modal-footer button:first-child {
+    color: #ffffff;
+    background-color: #5118a4;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: bold;
+}
+
+.modal-footer button:last-child {
+    font-family: normal;
+    color: #5118a4;
+    background: none !important;
+    border: none;
+}
+
+.order_sum_btn button {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
+
+.order_sum_btn button:first-child {
+    background-color: #5118a4;
+}
+
+.order_sum_btn button:last-child {
+    background-color: #ff1eb4;
+    margin: 5px 0;
+}
+
+.modal-dialog {
+    max-width: 680px !important;
+}
+
+.modal-header,
+.modal-footer {
+    border: none !important;
+}
+
+.modal-title {
+    font-family: bold;
+}
+
+.modal-body span, .modal-body h6, .modal-body h5 {
+    font-size: 20px !important;
+    font-family: normal !important;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.checkout {
+    margin-top: 7rem;
+}
+
+.checkout_inner {
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px black;
+}
+
+.checkout_inner h1 {
+    font-family: normal;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.checkout_inner p {
+    font-family: normal;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    font-size: 30px;
+}
+
+
+
+/* Responsive  */
+
+@media screen and (max-width:1200px) {
+    .card {
+        width: 18.5rem !important;
+        height: 23.5rem !important;
+    }
+
+    .card_inner img {
+        width: 295px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .card {
+        width: 13.5rem !important;
+        height: 22.5rem !important;
+    }
+
+    .card_inner img {
+        width: 214px;
+    }
+
+    .card-body h5 {
+        font-size: 18px;
+    }
+
+    .card-body p, .card-body a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card {
+        width: 25rem !important;
+        height: 25rem !important;
+
+    }
+
+    .card_inner img {
+        width: 398px;
+    }
+
+    .card-body h5 {
+        font-size: 30px;
+    }
+
+    .card-body p, .card-body a {
+        font-size: 18px;
+    }
+
+    .card_inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .checkout_inner h1 {
+        font-size: 24px;
+    }
+    .checkout_inner p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:580px) {
+    .welcome_inner h1 {
+        font-size: 35px;
+    }
+
+    .welcome_inner button {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 17rem !important;
+        height: 24rem !important;
+
+    }
+
+    .card_inner img {
+        width: 270px;
+    }
+
+    .card-body h5 {
+        font-size: 22px;
+    }
+
+    .card-body p, .card-body a {
+        font-size: 16px;
+    }
+
+    .card_inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+
+    .modal-body span, .modal-body h6, .modal-body h5 {
+        font-size: 16px !important;
+    }
+
+    .modal-footer button {
+        font-size: 12px !important;
+    }
+
+    .modal-dialog {
+        margin: 0 !important;
+    }
+
+    .checkout_inner h1 {
+        font-size: 22px;
+    }
+    .checkout_inner p {
+        font-size: 16px;
+    }
+
+    
+}
